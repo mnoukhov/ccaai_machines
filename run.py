@@ -50,7 +50,10 @@ def add_laurence_dialogue(console, user_input):
 
 # Function to add "You" dialogue
 def add_your_dialogue(console):
-    user_input = console.input("        [bold green] You: ")  # Get input from the user
+    user_input = None
+    while not user_input:
+        user_input = console.input("        [bold green] You: ")  # Get input from the user
+
     # live.update(f"     You: {user_input}")
     console.print()
     return user_input

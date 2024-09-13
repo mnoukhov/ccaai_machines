@@ -46,3 +46,7 @@ def laurence_v25():
     ]
     
     return chat_history
+
+def final_question():
+    "Stop playing the role of Laurence. Instead, what if I would like to make an AI of myself given this conversation. If you were create an AI that mimics me, give me 3-5 of my personality traits and then ask me 2-3 deeply personal questions. Things that you couldn't find out online but that would help you make a better copy of me. Start your response with 'If I were to make a chatbot of you' and then give your response. After the personal questions, ask if I think this would be enough to copy me. Then on a new line just ask 'what would be missing from the machine?'."
+    pass
