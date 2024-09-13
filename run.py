@@ -1,25 +1,14 @@
-import google.generativeai as genai
 import os
 import time
+
+import google.generativeai as genai
 from rich.console import Console
 from rich.table import Table
 from rich.spinner import Spinner
 from rich.live import Live
-
-
-from rich.console import Console
-from rich.panel import Panel
-from rich.prompt import Prompt
-from rich.spinner import Spinner
-from time import sleep
-
-from rich.text import Text
-from rich.console import Console
-from rich.live import Live
-from rich.spinner import Spinner
-import time
-
 from create_prompt import laurence_v25
+
+os.system('clear')
 
 genai.configure(api_key=os.environ["API_KEY"])
 model = genai.GenerativeModel(
